@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Ecommerce DOM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    ></script>
+
+    <style>
+      body {
+        background: #f4f6f9;
+      }
+
+      .card {
+        height: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: none;
+      }
+
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .navbar {
+        border-radius: 10px;
+        padding: 15px;
+      }
+
+      .total-box {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- NAVBAR -->
+      <nav
+        class="navbar navbar-light bg-white mb-4 d-flex justify-content-between"
+      >
+        <h4 class="font-weight-bold">Mini Ecommerce</h4>
+
+        <input
+          type="search"
+          class="form-control w-25"
+          placeholder="Search product..."
+        />
+
+        <div class="total-box">
+          <button class="btn btn-primary mr-2">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </button>
+
+          Total: Rp <span id="total-harga">0</span>
+        </div>
+      </nav>
+
+      <!-- PRODUK -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="pic/logitek.jpg" />
+            <div class="card-body text-center">
+              <h5>Keyboard Logitech</h5>
+              <p class="text-muted">Rp 600.000</p>
+              <button class="btn btn-primary add-cart" data-harga="600000">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="pic/msi.jpg" />
+            <div class="card-body text-center">
+              <h5>Keyboard MSI</h5>
+              <p class="text-muted">Rp 300.000</p>
+              <button class="btn btn-primary add-cart" data-harga="300000">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="pic/genius.jpeg" />
+            <div class="card-body text-center">
+              <h5>Mouse Genius</h5>
+              <p class="text-muted">Rp 50.000</p>
+              <button class="btn btn-primary add-cart" data-harga="50000">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="pic/jerry.jpg" />
+            <div class="card-body text-center">
+              <h5>Mouse Jerry</h5>
+              <p class="text-muted">Rp 300.000</p>
+              <button class="btn btn-primary add-cart" data-harga="50000">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
